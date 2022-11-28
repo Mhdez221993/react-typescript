@@ -1,5 +1,6 @@
 import './App.css';
 
+import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Oscar from './components/Oscar';
 
@@ -14,6 +15,7 @@ function App() {
           Oscar goes to Dicaprio
         </Heading>
       </Oscar>
+      <Greet name='Doe' isLoggedIn={true} />
     </div>
   )
 }
