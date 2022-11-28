@@ -1,11 +1,11 @@
 import './App.css';
 
-import LoggeIn from './components/state/LoggeIn';
+import User from './components/state/User';
 
 function App() {
   return (
     <div className="App">
-      <LoggeIn />
+      <User />
     </div>
   )
 }

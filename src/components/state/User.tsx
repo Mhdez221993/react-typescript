@@ -1,12 +1,13 @@
 import { useState } from "react"
 
-const User = () => {
-  const [user, setUser] = useState<authUser | null>(null)
+type AuthUser = {
+  name: string,
+  email: string
+}
 
-  type authUser = {
-    name: string,
-    email: string
-  }
+const User = () => {
+  const [user, setUser] = useState<AuthUser>({} as AuthUser)
+
 
   const handleLogin = () => {
     setUser({
@@ -15,16 +16,11 @@ const User = () => {
     })
   }
 
-  const handleLogout = () => {
-    setUser(null)
-  }
-
   return (
     <div>
         <button onClick={handleLogin}>Login</button>
-        <button onClick={handleLogout}>Logout</button>
-        <div>Use is {user?.name} </div>
-        <div>Use email is {user?.email} </div>
+        <div>User is {user.name} </div>
+        <div>User email is {user.email} </div>
     </div>
   )
 }
