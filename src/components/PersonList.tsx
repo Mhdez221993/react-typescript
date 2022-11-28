@@ -11,7 +11,7 @@ const PersonList = (props: PersonListProps) => {
         props.persons.map((person) => <h2>{person.fname} {person.lname}</h2>)
       }
     </div>
-  );
-};
+  )
+}
 
-export default PersonList;
+export default PersonList

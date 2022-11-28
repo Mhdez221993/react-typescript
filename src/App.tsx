@@ -1,8 +1,6 @@
 import './App.css';
 
-import Greet from './components/Greet';
-import Person from './components/Person';
-import PersonList from './components/PersonList';
+import Status from './components/Status';
 
 function App() {
   const person = {
@@ -23,9 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name="Doe" messageCount={0} isLoggedIn={false} />
-      <Person person={person} />
-      <PersonList persons={personList} />
+      <Status status="loading" />
     </div>
   )
 }
