@@ -4,9 +4,9 @@ type ContainerProps = {
   style: React.CSSProperties
 }
 
-const Container = (props: ContainerProps) => {
+const Container = ({style}: ContainerProps) => {
   return (
-    <div style={props.style}>
+    <div style={style}>
         Text content goes here
     </div>
   );
