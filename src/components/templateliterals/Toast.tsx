@@ -2,7 +2,7 @@ type OrizontalPosition = 'left' | 'center' | 'right'
 type VerticalPosition = 'top' | 'center' | 'button'
 
 type ToasPosition = {
-  position: `${OrizontalPosition}-${VerticalPosition}`
+  position: Exclude <`${OrizontalPosition}-${VerticalPosition}`, 'center-center'> | 'center'
 }
 
 const Toast = ({position}: ToasPosition) => {
