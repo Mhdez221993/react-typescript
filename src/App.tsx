@@ -1,11 +1,11 @@
 import './App.css';
 
-import Container from './components/Container';
+import Person from './components/Person';
 
 function App() {
   return (
     <div className="App">
-      <Container style={{border: '1px solid #530', padding: '10px'}} />
+      <Person person={{fname: 'John', lname: 'Doe'}} />
     </div>
   )
 }

@@ -1,18 +1,12 @@
+import { PersonProps } from './Person.types';
 
-type PersonProps = {
-  person: {
-    fname: string,
-    lname: string
-  }
-}
-
-const Person = (props: PersonProps) => {
-  const {fname, lname} = props.person
+const Person = ({person}: PersonProps) => {
+  const {fname, lname} = person
   return (
     <div>
       <h1>{fname} - {lname}</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Person;
+export default Person
