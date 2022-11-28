@@ -1,21 +1,11 @@
 import './App.css';
 
-import Greet from './components/Greet';
-import Heading from './components/Heading';
-import Oscar from './components/Oscar';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
-      <Heading>
-        Pasing children
-      </Heading>
-      <Oscar>
-        <Heading>
-          Oscar goes to Dicaprio
-        </Heading>
-      </Oscar>
-      <Greet name='Doe' isLoggedIn={true} />
+      <Button handleClick={(e, id) => console.log('Button clicked', e, id)}/>
     </div>
   )
 }
