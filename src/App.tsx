@@ -1,11 +1,11 @@
 import './App.css';
 
-import Person from './components/Person';
+import LoggeIn from './components/state/LoggeIn';
 
 function App() {
   return (
     <div className="App">
-      <Person person={{fname: 'John', lname: 'Doe'}} />
+      <LoggeIn />
     </div>
   )
 }
