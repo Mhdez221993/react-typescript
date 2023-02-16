@@ -5,17 +5,17 @@ import Text from './components/polymorphic/Text';
 function App() {
   return (
     <div className="App">
-     <Text as='h1' color='primary' size='lg'>
+      <Text as='h1' color='primary' size='lg'>
         Heading
-     </Text>
+      </Text>
 
-     <Text as='p' color='secondary' size='sm'>
+      <Text as='h2' color='secondary' size='sm'>
         Paragraph
-     </Text>
+      </Text>
 
-     <Text as='p' htmlFor='someId' color='secondary' size='sm'>
+      <Text as='p' color='secondary' size='sm'>
         Label
-     </Text>
+      </Text>
     </div>
   )
 }
